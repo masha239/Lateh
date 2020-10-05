@@ -16,3 +16,7 @@ ____
 .gitignore
 
 make clean
+
+____
+
+Результат собран с помощью overleaf
