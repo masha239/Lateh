@@ -1,0 +1,23 @@
+@startuml
+actor Eugene #red
+actor Lensky #black
+actor Tatyana #blue
+actor Olga #green
+
+Lensky -> Olga: Marry me pls
+Olga -> Lensky: OK
+Tatyana -[#gray]>o Eugene: Marry me pls
+Eugene -> Tatyana: No, thanks
+Eugene -> Olga: Hello there
+Lensky -> Eugene: I'll kill you
+Eugene -> Lensky: No you not
+note right
+Lensky dies!
+end note
+
+Eugene -[#gray]>o Tatyana: Marry me pls
+note left
+After a while...
+end note
+Tatyana -> Eugene: No, thanks
+@enduml

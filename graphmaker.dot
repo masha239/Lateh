@@ -1,0 +1,31 @@
+digraph G {
+
+  subgraph cluster_0 {
+    style=filled;
+    color=lightblue;
+    node [style=filled,color=white];
+    "поступил" -> "учишься" -> "сессия" -> "выпустился";
+    label = "Универ";
+  }
+
+  subgraph cluster_1 {
+    style=filled;
+    color=lightgreen;
+    node [style=filled,color=white];
+    "призвали" -> "служишь" -> "познал дзен" -> "отслужил";
+    label = "Армия";
+    color=blue
+  }
+  "закончил школу" -> "поступил";
+  "закончил школу" -> "призвали";
+  
+  "сессия" -> "призвали"
+  "отслужил" -> "поступил"
+  
+  
+  "выпустился" -> "работаешь";
+  "отслужил" -> "работаешь";
+
+  "закончил школу" [shape=recktangle, style=filled, color="seagreen"];
+  "работаешь" [shape=recktangle, style=filled, color="lightgray"];
+}
