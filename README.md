@@ -4,7 +4,7 @@
 Собирает все в main.pdf
 
 ## make clean 
-Удаляет все, чтосоздал make all
+Удаляет все, что создал make all
 
 ## make healthcheck
 
