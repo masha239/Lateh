@@ -1,10 +1,14 @@
-\documentclass[a4paper,12pt]{article}
-\usepackage[pdftex]{graphicx}
+\documentclass[a4paper,12pt]{report}
+
+\usepackage{graphicx}
+\graphicspath{./}
+
+\usepackage{subfiles}
 
 \begin{document}
-    \input{formula}
-    \newpage
-    \input{graph}
-    \newpage
-    \input{diagram}
+    \subfile{formula.tex}
+	\newpage
+	\subfile{graph.tex}
+	\newpage
+	\subfile{diagram.tex}
 \end{document}
